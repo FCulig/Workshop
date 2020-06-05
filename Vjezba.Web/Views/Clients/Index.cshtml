@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Client List";
+}
+
+@model List<Radionica.Model.Client>
+
+<h2>@ViewData["Title"]</h2>
+
+<a class="btn btn-primary" style="margin-bottom: 10px" id="toggle-client-edit" onclick="toggleForm()" >New Client</a>
+
+<div class="row" id="client-form-container" style="margin-bottom: 10px">
+    <form class="form-inline col-md-12" method="post" asp-controller="Clients" asp-action="AddClient">
+        <partial name="_ClientForm" model="new Radionica.Model.Client()" />
+        <div class="form-group">
+            <button class="btn btn-success" type="submit">Add</button>
+        </div>
+    </form>
+</div>
+
+<div class="container row">
+    <table class="col-md-12 table table-hover">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Repairs requested</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td><a asp-controller="Clients" asp-route-id="@item.ID" asp-action="Details">@item.FirstName @item.LastName</a></td>
+
+                @if (item.Breakdowns != null)
+                {
+                    <td>@item.Breakdowns.Count()</td>
+                }
+                else
+                {
+                    <td>0</td>
+                }
+            </tr>
+        }
+    </table>
+</div>
+
+@section scripts{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#client-form-container').css('display', 'none');
+        });
+
+        function toggleForm() {
+            console.log("asd")
+            if ($('#client-form-container').css('display') == 'block') {
+                $('#client-form-container').css('display', 'none');
+                $('#toggle-client-edit').html('New Client');
+                console.log("asd")
+            } else {
+                $('#client-form-container').css('display', 'block');
+                $('#toggle-client-edit').html('Close new client form');
+                console.log("11")
+            }
+        }
+    </script>
+}

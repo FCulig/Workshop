@@ -1,0 +1,9 @@
+C:\Users\Filip\Desktop\C# workspace\Vjezba_6_7\src\Vjezba\Vjezba.Model\bin\Debug\netcoreapp2.1\Vjezba.Model.deps.json
+C:\Users\Filip\Desktop\C# workspace\Vjezba_6_7\src\Vjezba\Vjezba.Model\bin\Debug\netcoreapp2.1\Vjezba.Model.dll
+C:\Users\Filip\Desktop\C# workspace\Vjezba_6_7\src\Vjezba\Vjezba.Model\bin\Debug\netcoreapp2.1\Vjezba.Model.pdb
+C:\Users\Filip\Desktop\C# workspace\Vjezba_6_7\src\Vjezba\Vjezba.Model\obj\Debug\netcoreapp2.1\Vjezba.Model.csprojAssemblyReference.cache
+C:\Users\Filip\Desktop\C# workspace\Vjezba_6_7\src\Vjezba\Vjezba.Model\obj\Debug\netcoreapp2.1\Vjezba.Model.AssemblyInfoInputs.cache
+C:\Users\Filip\Desktop\C# workspace\Vjezba_6_7\src\Vjezba\Vjezba.Model\obj\Debug\netcoreapp2.1\Vjezba.Model.AssemblyInfo.cs
+C:\Users\Filip\Desktop\C# workspace\Vjezba_6_7\src\Vjezba\Vjezba.Model\obj\Debug\netcoreapp2.1\Vjezba.Model.dll
+C:\Users\Filip\Desktop\C# workspace\Vjezba_6_7\src\Vjezba\Vjezba.Model\obj\Debug\netcoreapp2.1\Vjezba.Model.pdb
+C:\Users\Filip\Desktop\C# workspace\Vjezba_6_7\src\Vjezba\Vjezba.Model\obj\Debug\netcoreapp2.1\Vjezba.Model.csproj.CoreCompileInputs.cache

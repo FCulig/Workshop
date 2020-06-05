@@ -1,0 +1,35 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Radionica.Model.Employee
+
+
+<div class="form-group">
+    <label class="control-label">First name:</label>
+    <input asp-for="FirstName" class="form-control" />
+    <span asp-validation-for="FirstName" class="text-danger"></span>
+</div>
+
+<div class="form-group">
+    <label class="control-label">Last name:</label>
+    <input asp-for="LastName" class="form-control" />
+    <span asp-validation-for="LastName" class="text-danger"></span>
+</div>
+
+<div class="form-group">
+    <label class="control-label">Date of birth</label>
+    <div class="input-group date" data-provide="datepicker"
+         data-date-format="@System.Threading.Thread.CurrentThread.CurrentCulture.DateTimeFormat.ShortDatePattern.ToLower()">
+        <input asp-for="BirthDate" type="text" class="form-control">
+        <div class="input-group-addon">
+            <span class="glyphicon glyphicon-th"></span>
+        </div>
+    </div>
+    <span asp-validation-for="BirthDate" class="text-danger"></span>
+</div>
+
+<div class="form-group">
+    <label for="grad">City:</label>
+    <select asp-for="CityID" asp-items="@ViewBag.Cities" class="form-control" id="city"></select>
+    <span asp-validation-for="CityID" class="text-danger"></span>
+</div>

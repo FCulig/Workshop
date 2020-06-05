@@ -1,0 +1,14 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Radionica.Model.Employee
+
+<div class="row">
+    <form class="col-md-6" asp-action="Edit">
+        <input type="hidden" asp-for="ID" />
+        <partial name="_EmployeeForm" model="@Model" />
+        <div class="form-group">
+            <button class="btn btn-success" type="submit">Edit</button>
+        </div>
+    </form>
+</div>

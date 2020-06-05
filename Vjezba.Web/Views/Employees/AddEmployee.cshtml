@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "New Employee";
+}
+@model Radionica.Model.Employee
+
+<div class="row">
+    <form class="col-md-6" asp-action="AddEmployee">
+        <h2>@ViewData["Title"]</h2>
+        <partial name="_EmployeeForm" model="@Model" />
+        <div class="form-group">
+            <button class="btn btn-success" type="submit">Add</button>
+        </div>
+    </form>
+    <div class="col-md-6">
+        <h2>New City</h2>
+        <partial name="_CityForm" model="new Vjezba.Model.City()" />
+    </div>
+</div>

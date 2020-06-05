@@ -1,0 +1,9 @@
+C:\Users\Filip\Desktop\C# workspace\Vjezba_6_7\src\Vjezba\Vjezba.DAL\bin\Debug\netcoreapp3.1\Vjezba.DAL.deps.json
+C:\Users\Filip\Desktop\C# workspace\Vjezba_6_7\src\Vjezba\Vjezba.DAL\bin\Debug\netcoreapp3.1\Vjezba.DAL.dll
+C:\Users\Filip\Desktop\C# workspace\Vjezba_6_7\src\Vjezba\Vjezba.DAL\bin\Debug\netcoreapp3.1\Vjezba.DAL.pdb
+C:\Users\Filip\Desktop\C# workspace\Vjezba_6_7\src\Vjezba\Vjezba.DAL\obj\Debug\netcoreapp3.1\Vjezba.DAL.csprojAssemblyReference.cache
+C:\Users\Filip\Desktop\C# workspace\Vjezba_6_7\src\Vjezba\Vjezba.DAL\obj\Debug\netcoreapp3.1\Vjezba.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Filip\Desktop\C# workspace\Vjezba_6_7\src\Vjezba\Vjezba.DAL\obj\Debug\netcoreapp3.1\Vjezba.DAL.AssemblyInfoInputs.cache
+C:\Users\Filip\Desktop\C# workspace\Vjezba_6_7\src\Vjezba\Vjezba.DAL\obj\Debug\netcoreapp3.1\Vjezba.DAL.AssemblyInfo.cs
+C:\Users\Filip\Desktop\C# workspace\Vjezba_6_7\src\Vjezba\Vjezba.DAL\obj\Debug\netcoreapp3.1\Vjezba.DAL.dll
+C:\Users\Filip\Desktop\C# workspace\Vjezba_6_7\src\Vjezba\Vjezba.DAL\obj\Debug\netcoreapp3.1\Vjezba.DAL.pdb

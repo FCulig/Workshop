@@ -1,0 +1,26 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model List<Radionica.Model.Breakdown>
+
+<table class="col-md-12 table table-hover">
+    <tr>
+        <th>ID</th>
+        <th>Breakdown</th>
+        <th>Client</th>
+        <th>Fixing time</th>
+        <th>Assigned employee</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td><a asp-controller="Breakdowns" asp-route-id="@item.ID" asp-action="Details">@item.Name</a></td>
+            <td><a asp-controller="Clients" asp-route-id="@item.ClientID" asp-action="Details">@item.Client.FirstName @item.Client.LastName</a></td>
+            <td>@item.FixingTime h</td>
+            <td><a asp-controller="Employees" asp-route-id="@item.EmployeeID" asp-action="Details">@item.Employee.FirstName @item.Employee.LastName</a></td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,68 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Radionica.Model.Employee
+
+<h1>Employee details</h1>
+<div class="row">
+    <div class="col-md-6">
+        <table class="table table-bordered">
+            <tr>
+                <th>ID</th>
+                <td>@Model.ID</td>
+            </tr>
+            <tr>
+                <th>First name</th>
+                <td>@Model.FirstName</td>
+            </tr>
+            <tr>
+                <th>Last name</th>
+                <td>@Model.LastName</td>
+            </tr>
+            <tr>
+                <th>Date of birth</th>
+                <td>@Model.BirthDate</td>
+            </tr>
+            <tr>
+                <th>Residency</th>
+                @if (@Model.City != null)
+                {
+                    <td>@Model.City.Name</td>
+                }
+                else
+                {
+                    <td></td>
+                }
+            </tr>
+        </table>
+        <a class="btn btn-info" asp-action="Edit">Edit</a>
+        <a class="btn btn-danger" asp-action="Delete" asp-route-id="@Model.ID">Delete</a>
+    </div>
+</div>
+@{
+    var totalTime = 0.0;
+    foreach(var item in Model.Breakdowns)
+    {
+        totalTime = totalTime + item.FixingTime;
+    }
+}
+<div class="row">
+    <div class="col-md-12">
+        <h2>Worked on</h2>
+        @if (Model.Breakdowns != null)
+        {
+
+            <ul class="list-group list-group-flush">
+                @foreach (var item in Model.Breakdowns)
+                {
+                    <li class="list-group-item">@item.Name <span class="badge badge-primary badge-pill">@item.FixingTime h</span></li>
+                }
+                <li class="list-group-item active"><b>Total:</b> @Model.Breakdowns.Count() assingments<span class="badge badge-primary badge-pill">@totalTime h</span></li>
+            </ul>
+        }
+        else
+        {
+            <p class="alert alert-danger">Employee has no repairs completed!</p>
+        }
+    </div>
+</div>

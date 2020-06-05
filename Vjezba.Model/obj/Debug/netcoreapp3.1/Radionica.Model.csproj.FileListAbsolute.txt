@@ -1,0 +1,9 @@
+C:\Users\Filip\Desktop\C# workspace\Radionica.Model\bin\Debug\netcoreapp3.1\Radionica.Model.deps.json
+C:\Users\Filip\Desktop\C# workspace\Radionica.Model\bin\Debug\netcoreapp3.1\Radionica.Model.dll
+C:\Users\Filip\Desktop\C# workspace\Radionica.Model\bin\Debug\netcoreapp3.1\Radionica.Model.pdb
+C:\Users\Filip\Desktop\C# workspace\Radionica.Model\obj\Debug\netcoreapp3.1\Radionica.Model.csprojAssemblyReference.cache
+C:\Users\Filip\Desktop\C# workspace\Radionica.Model\obj\Debug\netcoreapp3.1\Radionica.Model.csproj.CoreCompileInputs.cache
+C:\Users\Filip\Desktop\C# workspace\Radionica.Model\obj\Debug\netcoreapp3.1\Radionica.Model.AssemblyInfoInputs.cache
+C:\Users\Filip\Desktop\C# workspace\Radionica.Model\obj\Debug\netcoreapp3.1\Radionica.Model.AssemblyInfo.cs
+C:\Users\Filip\Desktop\C# workspace\Radionica.Model\obj\Debug\netcoreapp3.1\Radionica.Model.dll
+C:\Users\Filip\Desktop\C# workspace\Radionica.Model\obj\Debug\netcoreapp3.1\Radionica.Model.pdb

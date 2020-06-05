@@ -1,0 +1,19 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Radionica.Model.Breakdown
+
+<div class="row col-md-12" style="margin-bottom: 10px;">
+    <h1>Enter new breakdown</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <form method="post" asp-action="NewBreakdown">
+            <partial name="_BreakdownForm" />
+            <div class="form-group">
+                <button type="submit" class="btn btn-default">Add</button>
+            </div>
+        </form>
+    </div>
+</div>

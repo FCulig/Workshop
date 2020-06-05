@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Employee List";
+}
+
+@model List<Radionica.Model.Employee>
+
+<h2>@ViewData["Title"]</h2>
+
+<a class="btn btn-primary" style="margin-bottom: 10px" asp-controller="Employees" asp-action="AddEmployee">New Employee</a>
+
+<div class="container row">
+    <table class="col-md-12 table table-hover">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Birth date</th>
+            <th>From</th>
+            <th>Repairs completed</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td><a asp-controller="Employees" asp-route-id="@item.ID"  asp-action="Details" >@item.FirstName @item.LastName</a></td>
+                <td>@item.BirthDate</td>
+                <td>@item.City.Name</td>
+                @if (item.Breakdowns != null)
+                {
+                    <td>@item.Breakdowns.Count()</td>
+                }
+                else
+                {
+                    <td>0</td>
+                }
+            </tr>
+        }
+    </table>
+</div>
